@@ -1,2 +1,2 @@
 # Project
-HTML&CSS Projects
+HTML&CSS Practices
