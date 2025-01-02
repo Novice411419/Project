@@ -1,10 +1,17 @@
+<!-- --------- Note ---------
+standard box model's width = content's width
+
+box-sizing:border-box;  把寬度範圍指定給邊框到邊框之間的空間
+所以在 block 元素中只要設定 box-sizing:border-box; 就不用另外再計算padding、border 的寬度
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>box-sizing</title>
     <style>
     .wrap{
         width: 960px;
@@ -28,17 +35,13 @@
 </head>
 
 <body>
-    <!-- box-sizing: border-box -->
+<!-- box-sizing: border-box -->
  
 <div class="wrap">
     <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloribus. Incidunt sint iusto a laudantium? Doloribus voluptas quis voluptatem earum culpa debitis repellat fuga laborum est facilis tempore, qui voluptates.</div>
     <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloribus. Incidunt sint iusto a laudantium? Doloribus voluptas quis voluptatem earum culpa debitis repellat fuga laborum est facilis tempore, qui voluptates.</div>
     <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloribus. Incidunt sint iusto a laudantium? Doloribus voluptas quis voluptatem earum culpa debitis repellat fuga laborum est facilis tempore, qui voluptates.</div>
     <div class="clearfix"></div>
-    
-    
 </div>
-
 </body>
-
 </html>

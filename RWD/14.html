@@ -1,0 +1,60 @@
+<!-- ------ Note ------ 
+1. RWD以手機為優先。 
+2. <label>, form
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD選單</title>
+</head>
+
+<style>
+    .header{
+        height: 50px;
+        background-color: #ccc;
+    }
+
+    .logo{
+        width: 60px;
+        height: 40px;
+    }
+    .logo img{
+        vertical-align: middle;
+    }
+
+</style>
+
+
+<body>
+    <input type="checkbox" name="" id="menu_control">
+    
+    <div class="header">
+        <h1 class="logo">
+            <a href='#'><img src="https://picsum.photos/60/40/?random=20"></a>
+        </h1>
+
+        <!-- 漢堡包 -->
+        <label for="menu_control" class='menu_btn'>
+            <span>選單</span>
+        </label>
+
+
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+
+
+</body>
+</html>

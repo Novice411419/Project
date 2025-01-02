@@ -1,10 +1,20 @@
+<!-- --------- Note --------- 
+在設定導覽列時，會運用到 inline-block
+
+1. inline-block 兼具 block可以設定padding, margin... 又以inline element一樣不會自動佔掉一行。
+2. inline-block 會產生空白字元 => fix: 在父層設定font-size:0後，在子元素設定font-size就好
+
+-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Day10-Blcok and inline</title>
     
     <style>
         .menu{

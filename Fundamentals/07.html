@@ -1,0 +1,65 @@
+<!-- --------- Note -----
+與 fiexd 相似，都自己獨立一層。
+當一個物件設定為絕對定位，會去父層找定位，只有父層有 relative 或是 absolute 或是 fiexd，有定位的設定，上方第一個有定位的就會成為物件絕對定位位置的依據，但如果父層都沒有，預設會是在瀏覽器視窗上(注意，不是body 也不是 html)，但不像 fixed，預設只會定位一次，拉動捲軸會跟著捲軸跑，不會固定在視窗上。
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute position</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<style>
+    .wrap{
+        width: 960px;
+        margin: auto;
+        display: flex;
+    }
+    .item{
+        position: relative;
+        width: 300px;
+        margin: 20px;
+        border: 1px solid #aaa;
+        padding: 10px;
+    }
+    .item img{
+        width: 100%;
+    }
+    .tab{
+        background-color: #f00;
+        color: #fff;
+        padding: 6px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    } 
+</style>
+
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="tab">Hot</div>
+            <img src="https://picsum.photos/id/684/300/200" alt="">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, minima eaque tempore excepturi eveniet praesentium odio, dolorem, velit doloribus ullam repellat. Dolore recusandae ullam fugit ducimus vitae rem voluptates distinctio.</p>
+        </div>
+        <div class="item">
+            <div class="tab">Hot</div>
+            <img src="https://picsum.photos/id/684/300/200" alt="">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, minima eaque tempore excepturi eveniet praesentium odio, dolorem, velit doloribus ullam repellat. Dolore recusandae ullam fugit ducimus vitae rem voluptates distinctio.</p>
+        </div>
+        <div class="item">
+            <div class="tab">Hot</div>
+            <img src="https://picsum.photos/id/684/300/200" alt="">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, minima eaque tempore excepturi eveniet praesentium odio, dolorem, velit doloribus ullam repellat. Dolore recusandae ullam fugit ducimus vitae rem voluptates distinctio.</p>
+        </div>
+    </div>
+</body>
+</html>
