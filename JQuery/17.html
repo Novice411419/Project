@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-a{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-color: #aaa;
+        }
+        .box-b{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-color: #faa;
+        }
+        .product-title{
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+        .content{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="box-a">box-a</div>
+<div class="box-b">box-b</div>
+
+<div class="product-title">產品介紹</div>
+<div class="content">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident dolorum nam recusandae minus, unde iste quia placeat nesciunt cumque pariatur amet maiores expedita suscipit temporibus alias numquam optio impedit officia. Nulla corporis ex id amet repudiandae itaque modi debitis repellat!
+</div>
+    
+    
+    
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+<script src='jquery.min.js'></script>
+<script> 
+$(document).ready(function(){
+    //dbclick 當雙擊box-a時, ...
+    $(".box-a").dblclick(function(){
+        $(".box-b").toggle();
+    })
+    //demo1
+    $(".product-title").click(function(){
+        $(".content").toggle();
+    })
+
+
+})
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+<!-- ----- Note ------
+browser在讀網頁時，會先建立html DOM才去讀css, js
+ 
+
+
+
+
+-->
